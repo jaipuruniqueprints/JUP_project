@@ -1,3 +1,8 @@
+:root {
+    --backColor: #0c1d36;
+    --front: #ffffff;
+}
+
 body {
     margin: 0px;
 }
@@ -16,14 +21,14 @@ nav>div {
 }
 
 .nav {
-    background: #642714;
+    background: var(--backColor);
     position: sticky;
     top: 0px;
     z-index: 10;
 }
 
 .jup {
-    width: 60px;
+    width: 120px;
     border-radius: 50px;
     margin: 5px;
 }
@@ -160,6 +165,16 @@ ul {
     background-color: #ffffff;
 }
 
+.searchform {
+    border-bottom: 1px solid black;
+    margin: 20px;
+    /* padding: 20px; */
+    padding-bottom: 0px;
+    position: relative;
+    font-size: 25px;
+    display: none;
+}
+
 /*responsive*/
 @media(max-width: 767px) {
     .footer-col {
@@ -182,16 +197,6 @@ ul {
     .searchform {
         display: flex;
     }
-}
-
-.searchform {
-    border-bottom: 1px solid black;
-    margin: 20px;
-    /* padding: 20px; */
-    padding-bottom: 0px;
-    position: relative;
-    font-size: 25px;
-    /*display: none;*/
 }
 
 #searchout {
